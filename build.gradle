@@ -2,7 +2,7 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.0.8-SNAPSHOT'
 	id 'io.spring.dependency-management' version '1.1.0'
-	id "org.sonarqube" version "4.2.0.3129"
+	id "org.sonarqube" version "4.2.1.3168"
 	id("org.mockito.mockito-release-tools.release-needed") version "0.8.54"
 }
 
@@ -31,8 +31,9 @@ tasks.named('test') {
 
 
 sonarqube {
-	properties {
-		property "sonar.projectKey", "adamfhr_Junit"
-		property "sonar.organization", "adamfhr"
-		property "sonar.host.url", "https://sonarcloud.io"
-	}
+  properties {
+    property "sonar.projectKey", "adamfhr_Entregable2"
+    property "sonar.organization", "adamfhr"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
+}
