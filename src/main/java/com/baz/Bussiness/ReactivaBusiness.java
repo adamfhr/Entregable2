@@ -9,7 +9,6 @@ import reactor.core.publisher.Mono;
 @Service
 public class ReactivaBusiness {
 	
-	
 	public Mono<String> hola(){
 		return Mono.just("hola asincrono").delayElement(Duration.ofSeconds(3));
 	}
