@@ -1,6 +1,6 @@
 plugins {
 	id 'java'
-	id 'org.springframework.boot' version '2.5.4'
+	id 'org.springframework.boot' version '3.1.0'
 	id 'io.spring.dependency-management' version '1.1.0'
 	id "org.sonarqube" version "4.2.1.3168"
 }
@@ -9,7 +9,7 @@ group = 'com.baz'
 version = '0.0.1-SNAPSHOT'
 
 java {
-	sourceCompatibility = '11'
+	sourceCompatibility = '17'
 }
 
 repositories {
@@ -25,8 +25,10 @@ allprojects{
 		testImplementation 'org.springframework.boot:spring-boot-starter-test'
 		testCompile "org.mockito:mockito-core:1.9.5"
 		testCompile 'junit:junit:4.12'
+		compile group: 'io.projectreactor', name: 'reactor-core', version: '3.5.7'
 	}
 }
+
 
 
 

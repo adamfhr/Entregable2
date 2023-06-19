@@ -52,6 +52,9 @@ public class MoviesBusiness {
             patronProxy();
             
             reflexion();
+            
+            
+           
         }
         catch (Exception e){
             e.printStackTrace();
@@ -59,6 +62,7 @@ public class MoviesBusiness {
 
 
     }
+
 
 
 
