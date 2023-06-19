@@ -9,7 +9,7 @@ group = 'com.baz'
 version = '0.0.1-SNAPSHOT'
 
 java {
-	sourceCompatibility = '17'
+	sourceCompatibility = '11'
 }
 
 repositories {
@@ -24,6 +24,8 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testCompile "org.mockito:mockito-all:1.9.5"
 }
+
+
 
 tasks.named('test') {
 	useJUnitPlatform()
